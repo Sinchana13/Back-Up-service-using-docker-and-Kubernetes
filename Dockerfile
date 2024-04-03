@@ -1,15 +1,18 @@
-# Use the official Python image as base
 FROM python:3.9-slim
 
-# Set working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy the Python script and credentials JSON file into the container
-COPY backup_script.py /app/backup_script.py
-COPY credentials.json /app/credentials.json
+# Copy the contents of the app folder to the container
+COPY app/ /app
 
-# Install dependencies
+# Install required dependencies
 RUN pip install --no-cache-dir google-api-python-client
 
-# Run the backup script
+# Copy backup script and credentials JSON file into the image
+COPY app/backup_script.py .
+COPY app/credentials.json .
+
+
+# Run the backup script periodically
 CMD ["python", "backup_script.py"]
