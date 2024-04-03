@@ -65,4 +65,4 @@ def backup_to_drive():
 while True:
     backup_to_drive()
     # Sleep for 24 hours before running again
-    time.sleep(24 * 60 * 60)
+    time.sleep(10 * 60)
