@@ -1,4 +1,4 @@
 # Init git ignore
 
 key.txt
-credentials.json
+app/credentials.json
