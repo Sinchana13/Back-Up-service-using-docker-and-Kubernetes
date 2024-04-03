@@ -16,4 +16,4 @@ COPY app/credentials.json .
 
 
 # Run the backup script periodically
-CMD ["python", "backup_script.py"]
+CMD ["python3", "backup_script.py"]

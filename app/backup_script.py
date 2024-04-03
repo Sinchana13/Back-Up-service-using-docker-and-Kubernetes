@@ -34,7 +34,7 @@ def backup_to_drive():
     service = build('drive', 'v3', credentials=creds)
 
     # Specify the folder to be backed up
-    folder_path = '/test'
+    folder_path = 'test'
     folder_name = os.path.basename(folder_path)
 
     # Create a new folder in Google Drive
