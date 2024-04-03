@@ -7,7 +7,8 @@ WORKDIR /app
 COPY app/ /app
 
 # Install required dependencies
-RUN pip install --no-cache-dir google-api-python-client
+RUN pip install --no-cache-dir google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
 
 # Copy backup script and credentials JSON file into the image
 COPY app/backup_script.py .
