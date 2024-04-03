@@ -1,0 +1,4 @@
+# Init git ignore
+
+key.txt
+app/credentials.json
