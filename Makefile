@@ -2,7 +2,7 @@ build:
 	sudo docker build -t backup-service .
 
 run: 
-	sudo docker run -v /home/ubuntu/Desktop/cc_project/app/credentials.json:/app/credentials.json -d backup-service
+	sudo docker run -v C:\Users\SINCHANA S\OneDrive\Desktop\SIXTH SEM\CC\BACKUP_SERVICE\app\credentials.json:/app/credentials.json -d backup-service
 
 show:
 	sudo docker ps
