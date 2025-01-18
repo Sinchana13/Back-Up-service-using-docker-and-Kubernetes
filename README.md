@@ -1,7 +1,2 @@
-# CC Project - Backup Service using Docker and Kubernetes
-
-Made by
-- PES1UG21CS564
-- PES1UG21CS574
-- PES1UG21CS596
-- PES1UG21CS600
+# Back-Up-service-using-docker-and-Kubernetes
+Creating a backup service that periodically backs up the contents of a folder to Google Drive using Docker and Kubernetes . In this project, worked with Docker and Kubernetes to create a Backup service.
